@@ -9,12 +9,6 @@ class FundingRound
         @@all << self
     end
     def investment=(amount)
-        # if amount < 0
-        #     @investment=0.to_f
-        # else
-        #     @investment=amount.to_f
-        # end
-        # return
         @investment=(amount<0) ? 0.to_f : amount.to_f
     end
     def self.all
